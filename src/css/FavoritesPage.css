@@ -1,0 +1,19 @@
+/* FavoritesPage.css */
+.favorites-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(242, 232, 220, 0.02);
+    border-radius: 16px;
+    border: 2px dashed var(--accent);
+    margin-top: 2rem;
+}
+
+.favorites-empty h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.favorites-empty p {
+    color: var(--bg-light);
+    opacity: 0.7;
+}

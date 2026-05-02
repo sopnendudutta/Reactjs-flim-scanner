@@ -1,0 +1,78 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* 1. Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Base Styles using your 4 Colors */
+:root {
+  --primary: #d97757;
+  /* Terracotta */
+  --bg-light: #f2e8dc;
+  /* Cream */
+  --accent: #7c3e2a;
+  /* Deep Burnt Sienna */
+  --bg-dark: #2f2f2f;
+  /* Charcoal */
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--bg-dark);
+  /* Prevents white flashes on load */
+  color: var(--bg-light);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Typography Defaults */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--bg-light);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+/* 4. Selection Styling (The 'Sleek' Touch) */
+::selection {
+  background-color: var(--primary);
+  color: var(--bg-dark);
+}
+
+/* 5. Custom Scrollbar (Minimalist Style) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
